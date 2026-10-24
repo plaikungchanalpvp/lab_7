@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapLibre Map</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header d-flex align-items-center gap-2">
+                <label for="basemap" class="mb-0">Basemap</label>
+                <select id="basemap" class="form-select form-select-sm w-auto">
+                    <option value="osm">OpenStreetMap</option>
+                    <option value="satellite">Satellite (Esri)</option>
+                </select>
+            </div>
+            <div class="card-body map" id="map"></div>
+        </div>
+        <span id="lat"></span>, <span id="lng"></span>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
